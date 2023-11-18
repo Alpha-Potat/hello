@@ -1,2 +1,3 @@
-def hello(usr:str):
-    print (f'Hello, {usr}')
+class hello:
+    def hello(usr:str):
+        print (f'Hello, {usr}')

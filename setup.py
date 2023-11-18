@@ -5,13 +5,14 @@ with open ("app/README.md", 'r') as f:
 
 setup(
     name="hello-func",
-    version='0.0.1',
+    version='0.0.2',
     description="Noway, this prints hello! OMG 360 NOSCOPE MLG",
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="AlphaPotat",
     author_email="luchinin.n@yandex.ru",
-    packages=find_packages(),
+    package_dir={"":"app"},
+    packages=find_packages(include="app"),
     url="https://github.com/Alpha-Potat/hello",
     classifiers=[
         "Programming Language :: Python :: 3.10",
